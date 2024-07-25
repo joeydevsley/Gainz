@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GainsRandomizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GainsRandomizer</h1>
+        <div class="buttons">
+            <button onclick="generateWorkout('Chest')">Chest</button>
+            <button onclick="generateWorkout('Arms and Triceps')">Arms and Triceps</button>
+            <button onclick="generateWorkout('Shoulders and Back')">Shoulders and Back</button>
+            <button onclick="generateWorkout('Legs')">Legs</button>
+            <button onclick="generateWorkout('Cardio/HIIT')">Cardio/HIIT</button>
+        </div>
+    </header>
+    <main>
+        <div id="workoutList">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exercise</th>
+                        <th>Sets and Reps</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+                <tbody id="exerciseTable">
+                    <!-- Exercises will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="calendar">
+            <h2>Last 7 Days</h2>
+            <div id="calendarDays">
+                <!-- Calendar will be generated here -->
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
